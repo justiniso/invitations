@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="wavesurfer.min.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="app.js"></script>
+    <script src="util.js"></script>
+    <style type="text/css">
+        
+/*        #v-container{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+        }
+        #waveform{
+            transform: translateX(128px) rotate(90deg);
+            transform-origin: top left;
+        }*/
+    </style>
+</head>
+<body>
+    <div id="debug"></div>
+    <div class="message"></div>
+    <script type="text/javascript">
+
+        App.init({
+            'audioSrc': 'goldbergvariations.mp3',
+            'container': 'body'
+        });
+
+        App.addEvent(2, 'This is the first one');
+        App.addEvent(5, 'This is the second one');
+        
+        // var wavesurfer = WaveSurfer.create({
+        //     container: '#waveform',
+        //     waveColor: 'violet',
+        //     progressColor: 'purple',
+        //     barWidth: 0.5,
+        //     normalize: true
+        // });
+
+        // wavesurfer.load('goldbergvariations.mp3');
+        
+
+       //  wavesurfer.on('ready',function(){
+       //      $('#w-container').width($('#v-container').height());
+       //      wavesurfer.play();
+       // });
+
+
+    </script>
+
+</body>
+</html>
